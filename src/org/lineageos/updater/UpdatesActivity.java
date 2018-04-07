@@ -23,7 +23,6 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.icu.text.DateFormat;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -234,12 +233,6 @@ public class UpdatesActivity extends UpdatesListActivity {
                         .edit()
                         .putBoolean(Constants.PREF_MOBILE_DATA_WARNING, enable)
                         .apply();
-                return true;
-            }
-            case R.id.menu_show_changelog: {
-                Intent openUrl = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse(Utils.getChangelogURL(this)));
-                startActivity(openUrl);
                 return true;
             }
         }
