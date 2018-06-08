@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The LineageOS Project
+ * Copyright (C) 2017 The     public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "lineage.updater.allow_downgrading";geOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,6 +37,7 @@ public final class Constants {
     public static final String PROP_DEVICE = "ro.omni.device";
     public static final String PROP_NEXT_DEVICE = "ro.updater.next_device";
     public static final String PROP_RELEASE_TYPE = "ro.omni.releasetype";
+    public static final String PROP_UPDATER_ALLOW_DOWNGRADING = "lineage.updater.allow_downgrading";
     public static final String PROP_UPDATER_URI = "updater.uri";
 
     public static final String PREF_INSTALL_OLD_TIMESTAMP = "install_old_timestamp";
